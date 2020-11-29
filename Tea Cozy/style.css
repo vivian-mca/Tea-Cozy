@@ -1,0 +1,205 @@
+/* Universal Styles
+====================*/
+
+* {
+	font-family: Helvetica, sans-serif;
+	font-size: 22px;
+	color: seashell;
+	background-color: black;
+	opacity: 0.9;
+	text-align: center;
+}
+main {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1.17rem;
+}
+
+h5 {
+	font-size: 0.83rem;
+}
+
+
+/* Navigation Bar
+====================*/
+
+.navigation {
+	height: 3.14rem;
+	width: 100%;
+	border-bottom: 1px solid seashell;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	margin: 0;
+}
+.logo img {
+	height: 2.27rem;
+	padding: 0;
+	margin-left: 0.46rem;
+}
+
+nav a {
+	text-decoration: underline;
+	display: inline-block;
+	padding-left: 0.91rem;
+	margin-right: 0.46rem;
+}
+
+.navigation .icon {
+	display: none;
+}
+
+/* Main Content
+====================*/
+
+main {
+	position: relative;
+	top: 3.14rem;
+	/* width: 54.545rem; */
+	margin-bottom: 3.636rem;
+}
+
+/* Mission Statement Section */
+
+.banner {
+	height: 31.818rem;
+	max-width: 54.545rem;
+	margin: 0 auto;
+	display: flex;
+	background: url(./images/img-mission-background.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.mission-statement {
+	width: 54.545rem;
+	margin: auto;
+	opacity: 1;
+}
+
+.mission-statement h2 {
+	margin-top: 0.46rem;
+}
+
+.mission-statement h4 {
+	margin-bottom: 0.46rem;
+}
+
+/* "Tea of the Month" Section*/
+
+.tea {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 1.818rem;
+	padding-bottom: 65px;
+}
+
+.tea h4 {
+	margin-bottom: 0.227rem;
+}
+
+.image-container {
+	max-height: 9.091rem;
+	max-width: 13.636rem;
+	display: inline-block;
+	margin: 0 0.46rem;
+	padding-top: 1.136rem;
+}
+
+.image-container img {
+	width: 100%;
+	height: auto;
+}
+
+figcaption {
+	font-weight: bold;
+	text-align: center;
+	padding-top: 0.46rem;
+}
+
+/* Locations Section */
+
+.locations {
+	height: 22.727rem;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 3.409rem;
+	background: url(./images/img-locations-background.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.locations h2 {
+	background: none;
+	margin: 0;
+	padding-bottom: 0.682rem;
+}
+
+.location-container {
+	display: inline-block;
+	width: 13.636rem;
+	height: auto;
+	margin: 0.682rem 0.909rem;
+	opacity: 1;
+}
+
+.location-container span {
+	display: block;
+	margin: 1.818rem auto 1.364rem;
+}
+
+/* Contact Section */
+
+.contact-info {
+	height: 9.091rem;
+}
+
+.contact-info h2 {
+	margin: 0.455rem auto 1.818rem;
+}
+
+/* Footer
+====================*/
+
+footer h5 {
+	text-align: left;
+	margin: 0;
+	margin-left: 0.909rem;
+	padding-bottom: 1.364rem;
+}
+
+@media only screen and (max-width: 1032px) {
+	.locations {
+		height: 700px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.mission-statement h4 {
+		font-size: 0.83rem;
+	}
+
+	.locations {
+		height: 1050px;
+	}
+
+@media only screen and (max-width: 600px) {
+	.logo {
+		display: none;
+	}
+
+	nav {
+		display: flex;
+	}
