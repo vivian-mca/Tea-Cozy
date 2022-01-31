@@ -4,15 +4,15 @@
 * {
 	font-family: Helvetica, sans-serif;
 	font-size: 22px;
-	color: seashell;
-	background-color: black;
+	color: seashell;/* acceptable, but HEX codes are preferred IMO */
+	background-color: black;/* samsies */
 	opacity: 0.9;
 	text-align: center;
 }
 main {
 	margin: 0;
 	padding: 0;
-	display: block;
+	display: block;/* minor:  main is block by default, and also assigned in normalize.css */
 }
 
 h2 {
@@ -33,7 +33,7 @@ h5 {
 
 .navigation {
 	height: 3.14rem;
-	width: 100%;
+	width: 100%;/* acceptable, but also do:: left: 0, right: 0, iirc */
 	border-bottom: 1px solid seashell;
 	position: fixed;
 	z-index: 1;
@@ -46,7 +46,7 @@ h5 {
 .logo {
 	margin: 0;
 }
-.logo img {
+.logo img { /* minor: maybe just add a class directly to the image, rather than a slightly more specific targetting */
 	height: 2.27rem;
 	padding: 0;
 	margin-left: 0.46rem;
@@ -59,7 +59,7 @@ nav a {
 	margin-right: 0.46rem;
 }
 
-.navigation .icon {
+.navigation .icon { /* not used? */
 	display: none;
 }
 
@@ -101,7 +101,7 @@ main {
 /* "Tea of the Month" Section*/
 
 .tea {
-	max-width: 1000px;
+	max-width: 1000px; /* what's this for? */
 	margin: 0 auto;
 	padding-top: 1.818rem;
 	padding-bottom: 65px;
@@ -111,7 +111,7 @@ main {
 	margin-bottom: 0.227rem;
 }
 
-.image-container {
+.image-container { /* minor: in a larger project, this would probably want a slightly more descriptive name, unless ALL images share the same specs */
 	max-height: 9.091rem;
 	max-width: 13.636rem;
 	display: inline-block;
@@ -134,7 +134,7 @@ figcaption {
 
 .locations {
 	height: 22.727rem;
-	max-width: 1200px;
+	max-width: 1200px; /* same question */
 	margin: 0 auto;
 	padding-top: 3.409rem;
 	background: url(./images/img-locations-background.jpg) no-repeat center;
@@ -177,10 +177,16 @@ footer h5 {
 	text-align: left;
 	margin: 0;
 	margin-left: 0.909rem;
+	/*
+	typically this wouldn't be applied to a text element,
+	or at least not what you have. better to add padding to the parent
+	footer. It's not wrong, just try to avoid adding padding to text elements
+	when it's only for visual spacing. unless they're lists.
+	*/
 	padding-bottom: 1.364rem;
 }
 
-@media only screen and (max-width: 1032px) {
+@media only screen and (max-width: 1032px) {/* 1032px is non standard? */
 	.locations {
 		height: 700px;
 	}
@@ -195,7 +201,7 @@ footer h5 {
 		height: 1050px;
 	}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) { /* same */
 	.logo {
 		display: none;
 	}
